@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Viegash - Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #0073e6, #004aad);
+            color: #fff;
+            padding: 60px 10%;
+            text-align: center;
+            position: relative;
+            animation: slideDown 1s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: 700;
+            animation: fadeIn 1.5s ease-out;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        header a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav {
+            background: #004aad;
+            padding: 10px 10%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ffd700;
+            color: #004aad;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 2em;
+        }
+        section {
+            margin: 30px 0;
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-out;
+        }
+        h2 {
+            color: #004aad;
+            margin-top: 0;
+            font-size: 2em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        ul li strong {
+            color: #004aad;
+        }
+        .skills, .technologies, .projects, .awards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-evenly;
+        }
+        .skills div, .technologies div, .projects div, .awards div {
+            background: #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            min-width: 180px;
+            transform: scale(1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .skills div:hover, .technologies div:hover, .projects div:hover, .awards div:hover {
+            transform: scale(1.1);
+            background-color: #004aad;
+            color: #ffffff;
+        }
+        footer {
+            background: #f1f1f1;
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        footer a {
+            color: #004aad;
+            text-decoration: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-100px); }
+            to { transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .skills div, .technologies div, .projects div, .awards div {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 0.9em;
+            }
+            .skills div, .technologies div, .projects div, .awards div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mario Viegash</h1>
+        <p>Software Engineer | Tangerang, Banten | +6281351911928 | <a href="mailto:marioviegash@gmail.com">marioviegash@gmail.com</a></p>
+    </header>
+
+    <nav>
+        <a href="#work">Work Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+    </nav>
+
+    <div class="container">
+        <section id="work">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Senior Software Engineer</strong> @ Superbank (Feb 2023 - Present)
+                    <ul>
+                        <li>Handle and manage a new project called Rewards.</li>
+                        <li>Design and implement the Rewards system.</li>
+                        <li>Building communication with vendors to build the system.</li>
+                        <li>Maintaining and developing projects/servers from end to end.</li>
+                        <li>Analysis and design of best architecture.</li>
+                        <li>Troubleshooting and fixing software errors.</li>
+                    </ul>
+                </li>
+                <li><strong>Senior Fullstack Engineer</strong> @ Finaccel.co (May 2021 - Feb 2023)
+                    <ul>
+                        <li>Handle and manage project Halokas (New project).</li>
+                        <li>Design and implement the Halokas system.</li>
+                        <li>Maintaining and developing projects/servers from end to end.</li>
+                        <li>Analysis and design of best architecture.</li>
+                        <li>Troubleshooting and fixing software errors.</li>
+                    </ul>
+                </li>
+                <!-- Add the rest of the experience here -->
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>Software Development</div>
+                <div>System Development</div>
+                <div>Cloud Computing</div>
+                <div>Data Engineering</div>
+            </div>
+        </section>
+
+        <section id="technologies">
+            <h2>Technologies</h2>
+            <div class="technologies">
+                <div>Amazon Web Service</div>
+                <div>Google Cloud Platform</div>
+                <div>Terraform by HashiCorp</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div>2018: Web Internal TELKOM (Scoring)</div>
+                <div>2018: JFlow Code Generator</div>
+                <div>2017: Cashier System (Web)</div>
+                <div>2017: Forum Mobile App (MyQuestion)</div>
+                <!-- Add more projects -->
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Computer Science, Information Technology Major</strong><br>Bina Nusantara University (2014 - 2018)<br>GPA: 3.67 / 4.0</p>
+        </section>
+
+        <section id="awards">
+            <h2>Honor and Awards</h2>
+            <div class="awards">
+                <div>2018: BNCC Hackathon (Runner Up)</div>
+                <div>2017: ASC Web Design (Top 10 Finalist)</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Created with ❤ by Mario Viegash | <a href="https://linkedin.com/in/marioviegash">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
